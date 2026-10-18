@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@theme {
+  --color-bg: #0b0813;
+  --color-card: #140f21;
+  --color-line: #2a2142;
+  --color-p: #a78bfa;
+  --color-p2: #7c3aed;
+  --font-sans: var(--font-body), system-ui, sans-serif;
+  --font-display: var(--font-head), system-ui, sans-serif;
+  --font-mono: var(--font-code), ui-monospace, monospace;
+}
+html { overflow-y: scroll; scrollbar-gutter: stable; }
+body { background: var(--color-bg); color: #e9e5f5; }
+::selection { background: var(--color-p2); }
+.bg-glow { background: radial-gradient(55rem 38rem at 88% 12%, rgba(124, 58, 237, 0.22), transparent 65%); background-attachment: fixed; }
+.spot {
+  position: fixed; inset: 0; z-index: 1; pointer-events: none;
+  background: radial-gradient(460px circle at var(--mx, 50%) var(--my, 30%), rgba(139, 92, 246, 0.17), transparent 65%);
+}
